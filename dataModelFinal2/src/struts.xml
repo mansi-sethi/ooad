@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<package name="default" extends="struts-default">
+
+<action name = "newtable" class = "demo.Addtable">
+<result name="success">database.jsp</result>
+</action>
+
+<action name = "getStreams" class = "demo.GetStreams" method="getAllStreams">
+<result name="success">Display_all_streams.jsp</result>
+</action>
+
+<action name = "getAllStreamsData" class = "demo.GetStreams" method="getStreamsData">
+<result name="success">Display_all_streams.jsp</result>
+</action>
+
+<action name = "getLinkStreams" class = "demo.GetStreams" method="getLinkStreamsName">
+<result name="success">DisplayLinkStreams.jsp</result>
+</action>
+
+<action name = "getLinkStreamsDepend" class = "demo.GetStreams" method="getLinkStreamsName">
+<result name="success">DisplayLinkStreams.jsp</result>
+</action>
+
+<action name = "getLinkStreamsData" class = "demo.GetStreams" method="getLinkStreamsData">
+<result name="success">DisplayLinkStreams.jsp</result>
+</action>
+
+
+
+</package>
+</struts>

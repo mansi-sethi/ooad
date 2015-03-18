@@ -5,11 +5,11 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import com.opensymphony.xwork2.ActionSupport;
 
 import demo.ConnectionPool;
 
-public class Addtable extends ActionSupport {
+public class Addtable {
+	
 	private String streamname;
 	private String sip;
 	private String stream_att;
